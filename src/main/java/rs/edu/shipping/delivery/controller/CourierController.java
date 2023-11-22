@@ -19,7 +19,6 @@ public class CourierController {
 
   @PostMapping(value = "/create")
   public ResponseEntity<Void> create(CourierRequest request){
-
     courierService.create(request);
     return ResponseEntity.ok().build();
   }
