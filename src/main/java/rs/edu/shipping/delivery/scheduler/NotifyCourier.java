@@ -6,7 +6,6 @@ import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import rs.edu.shipping.delivery.constants.ProviderName;
 import rs.edu.shipping.delivery.service.OrdersService;
 
 @Component
