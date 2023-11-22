@@ -1,6 +1,5 @@
 package rs.edu.shipping.delivery.scheduler;
 
-import java.util.Arrays;
 import lombok.AllArgsConstructor;
 import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;
 import org.springframework.scheduling.annotation.Scheduled;
