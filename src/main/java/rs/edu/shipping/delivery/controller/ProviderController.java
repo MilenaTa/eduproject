@@ -26,7 +26,6 @@ public class ProviderController {
       return ResponseEntity.internalServerError().build();
     }
   }
-
   @PostMapping(value = "/create")
   public ResponseEntity<Void> create(String name, BigDecimal courierFee){
     try {
