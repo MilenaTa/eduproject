@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import rs.edu.shipping.user.constants.UserRole;
 
 @Embeddable
 @Getter
