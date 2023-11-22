@@ -1,0 +1,47 @@
+plugins {
+    id 'org.springframework.boot' version '3.1.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'io.edu'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.1.0'
+    implementation 'com.cosium.spring.data:spring-data-jpa-entity-graph:3.1.0'
+    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
+    implementation 'io.swagger.core.v3:swagger-annotations:2.2.18'
+    implementation 'org.apache.kafka:kafka-clients:3.6.0'
+    implementation 'org.json:json:20201115'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'net.javacrumbs.shedlock:shedlock-spring:4.24.0'
+
+    implementation 'org.apache.logging.log4j:log4j-core:2.21.1'
+    implementation 'log4j:log4j:1.2.17'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

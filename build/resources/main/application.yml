@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shipping
+    username: root
+    password: milena
+  security:
+    user:
+      name: milena
+      password: milena
+price:
+  weightFeeAmount: 300
+  weightFeeDescription: Extra fee for package weight more than 10kg.
+  cityShippingAmount: 0
+  cityShippingDescription: Delivery between cities.
+  intercityShippingAmount: 300
+  intercityShippingDescription: Delivery between cities.
+  weatherFeeGlovo: 50
+  weatherFeeWolt: 70
+  weightLimitAks: 7
+  weightLimitDexpress: 10
+deliveryTime:
+  aks:
+    default: 2
+    delay: 1
+  bex:
+    defaultCity: 2
+    defaultIntercity: 4
+    delayCity: 2
+    delayIntercity: 3
+  dExpress:
+    defaultCity: 3
+    defaultIntercity: 5
+    delayCity: 2
+    delayIntercity: 4
+    moreDelayCity: 1
+    moreDelayIntercity: 3
+time:
+  default-timezone: Europe/Belgrade
+scheduled:
+  expired-orders-deactivator:
+    cron: "0 28 12 * * *"
+  courier-notifier:
+    cron: "*/10 * * * * *"
+kafka:
+  topic: demo_java
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
