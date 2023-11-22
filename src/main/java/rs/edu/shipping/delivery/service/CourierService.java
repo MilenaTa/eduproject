@@ -5,12 +5,9 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import rs.edu.shipping.delivery.controller.request.CourierRequest;
-import rs.edu.shipping.delivery.domain.Provider;
 import rs.edu.shipping.delivery.entity.CourierEntity;
-import rs.edu.shipping.delivery.entity.ProviderEntity;
 import rs.edu.shipping.delivery.repository.CourierEntityRepository;
 import rs.edu.shipping.user.constants.UserRole;
-import rs.edu.shipping.user.entity.UserEntity;
 import rs.edu.shipping.user.service.UserService;
 
 @Service
