@@ -50,6 +50,4 @@ public class OrdersEntity {
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "courier", referencedColumnName = "id")
   private CourierEntity courier;
-
-  String a = "milena test";
 }
