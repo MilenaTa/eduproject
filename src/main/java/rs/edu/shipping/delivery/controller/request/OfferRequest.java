@@ -1,7 +1,6 @@
 package rs.edu.shipping.delivery.controller.request;
 
 import java.math.BigDecimal;
-import java.util.Date;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
